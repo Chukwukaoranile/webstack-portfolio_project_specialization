@@ -1,0 +1,1 @@
+#This repository contains directories for ALX webstack-portfolio_project_specialization project by **Chika Achebe, Ugo-Okonkwo Stella, Emmanuel Oluyege and Ontuora Chidimma** as part of requirements for _12 months SE programme._

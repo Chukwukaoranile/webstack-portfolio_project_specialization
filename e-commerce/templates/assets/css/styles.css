@@ -12,6 +12,10 @@ body{
     display: flex;
 }
 
+.t-center{
+    text-align: center;
+}
+
 /* HEADER */
 header{
     /* padding: 25px 35px; */
@@ -216,6 +220,10 @@ a{
     font-weight: 600;
 }
 
+.rating{
+    letter-spacing: -0.18rem;
+}
+
 /* ABOUT HOMEPAGE */
 .about-homepage{
     justify-content: space-between;
@@ -270,6 +278,129 @@ a{
     line-height: 1.6rem;
     color: #646467;
 }
+
+.background-img_2{
+    background: url("/e-commerce/templates/assets/images/pic10.jpg");
+    position: relative;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 40rem;
+    background-repeat: no-repeat;
+}
+
+/* .background-img::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+
+} */
+
+.watch{
+    text-align: center;
+}
+
+.watch-div{
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 1px solid white;
+    padding: 1rem 2rem;
+    transition: background-color 0.3s, color 0.3s;
+    width: 15rem;
+    text-align: center;
+}
+
+.watch-div:hover a{
+    color: #fb4b7a;
+}
+
+.watch-div:hover{
+    background-color: white;
+    color: #fb4b7a;
+}
+
+.hero_2{
+   margin-top: 6rem;
+   justify-content: center;
+   padding-top: 10%;
+}
+
+.beauty-flawlwess{
+    text-align: center;
+    margin-bottom: 5rem;
+    line-height: 3rem;
+}
+
+.beauty-flawlwess p{
+    color: #646467;
+}
+
+/* REVIEW */
+.review-container{
+    margin-top: 20rem;
+}
+
+.review{
+    margin-bottom: 4rem;
+}
+
+.review-card{
+    width: 30%;
+    text-align: center;
+}
+
+.rating_pink{
+    color: #fb4b7a;
+    margin-bottom: 1rem;
+    letter-spacing: -0.12rem;
+}
+
+.rate{
+    font-size: 1.1rem;
+    line-height: 2rem;
+    font-weight: 500;
+    color: #646467;
+    margin-bottom: 1.5rem;
+}
+
+.review-img img{
+    border-radius: 100px;
+    margin-bottom: 1rem;
+}
+
+.reviewer-name{
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #646467;
+    letter-spacing: 0.1rem;
+}
+
+.review-card-container{
+    justify-content: space-between;
+}
+
+/* FOLLOW */
+.follow, .follow a{
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: black;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.follow a{
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+
 
 /* FOOTER */
 

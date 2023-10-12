@@ -170,8 +170,12 @@ a{
     background-color: #f7f7f9;
 } */
 
+.productCard-container{
+    justify-content: space-between;
+}
+
 .product-img_container{
-    width: 90%;
+    width: 98%;
     /* background-color: red; */
     height: 50vh;
     position: relative;
@@ -212,8 +216,60 @@ a{
     font-weight: 600;
 }
 
+/* ABOUT HOMEPAGE */
+.about-homepage{
+    justify-content: space-between;
+    margin-top: 18rem;
+    margin-bottom: 10rem;
+    
+}
 
+.about-img{
+    width: 50%;
+}
 
+.about-writeup-container{
+    width: 40%;
+    align-items: center;
+
+}
+
+.about-homepage-div{
+   
+}
+
+.about-writeup{
+    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
+    line-height: 1.5rem;
+}
+
+/* ORGANIC CARE */
+.organic-care{
+    justify-content: space-between;
+    text-align: center;
+    border-top: 1px solid #abb8c3;
+    padding-top: 5rem;
+}
+
+.fa-hand-sparkles, .fa-leaf, .fa-hand-holding-heart{
+    color: #fb4b7a;
+    font-size: 1.5rem;
+    background-color: white;
+    padding: 20px;
+    border-radius: 100px;
+}
+
+.properties{
+    font-weight: normal;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.organic-care p{
+    line-height: 1.6rem;
+    color: #646467;
+}
 
 /* FOOTER */
 

@@ -301,12 +301,41 @@ a{
 
 } */
 
-.watch{
+.hero_2{
+    margin-top: 6rem;
+    justify-content: center;
+    padding-top: 18%;
     text-align: center;
+ } 
+
+ .watch-youtube{
+    color: white;
+ }
+
+ .flawless{
+    margin-bottom: 2rem;
+    font-weight: normal;
+    font-size: 3rem;
+ }
+
+.watch{
+    font-size: 0.8rem;
+    padding: 1rem 1.5rem;
+    border: 1px solid white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.watch i{
+    padding-left: 1rem;
+}
+
+.watch:hover{
+    background-color: white;
+    color: #fb4b7a;
 }
 
 .watch-div{
-    text-decoration: none;
+    /* text-decoration: none;
     color: white;
     font-size: 0.8rem;
     font-weight: 600;
@@ -314,23 +343,20 @@ a{
     padding: 1rem 2rem;
     transition: background-color 0.3s, color 0.3s;
     width: 15rem;
-    text-align: center;
+    text-align: center; */
 }
 
+
+
 .watch-div:hover a{
-    color: #fb4b7a;
+    /* color: #fb4b7a; */
 }
 
 .watch-div:hover{
-    background-color: white;
-    color: #fb4b7a;
+    /* background-color: white;
+    color: #fb4b7a; */
 }
 
-.hero_2{
-   margin-top: 6rem;
-   justify-content: center;
-   padding-top: 10%;
-}
 
 .beauty-flawlwess{
     text-align: center;
@@ -392,14 +418,33 @@ a{
     font-weight: normal;
     color: black;
     text-align: center;
-    margin-top: 10rem;
+    margin-top: 9.5rem;
+    margin-bottom: 4rem;
 }
 
 .follow a{
     text-decoration: underline;
     text-decoration-color: black;
+    
 }
 
+/* MORE IMAGES */
+
+.more-img{
+    width: 75%;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.more-images{
+    width: 30%;
+    margin-bottom: 2rem;
+}
+
+.more-images img{
+    width: 100%;
+}
 
 
 /* FOOTER */

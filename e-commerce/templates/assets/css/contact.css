@@ -13,12 +13,9 @@ body{
 }
 
 /* HEADER */
-header{
-  /* padding: 25px 35px; */
-  
-  
-  
-}
+/* header{
+  /* padding: 25px 35px;
+}*/
 
 .background-img{
   background: url("/e-commerce/templates/assets/images/contact-img.jpg");

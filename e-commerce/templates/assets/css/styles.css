@@ -170,12 +170,17 @@ a{
     color: #ffffff;
 }
 
+.productCard{
+    margin-bottom: 2rem;
+}
+
 /* .productCard{
     background-color: #f7f7f9;
 } */
 
 .productCard-container{
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .product-img_container{

@@ -1,0 +1,166 @@
+.background-img{
+    background: none;
+    height: 0;
+    padding-bottom: 12rem;
+}
+.nav-container{
+    color: black;
+    background-color: white;
+}
+.background-img::before{
+    background: rgba(0, 0, 0, 0);
+    z-index: -2;
+}
+/* .business-title-img img{
+    font-size: 1rem;
+} */
+
+
+/* .options, .nav-container, .profile_cart{
+    color: black;
+} */
+
+.a-nav, .fa-user{
+    color: rgb(161, 144, 125);
+}
+
+.a-nav{
+    transition: color 0.5s;
+}
+
+.a-nav:hover{
+    color: #fa2d64;
+}
+
+.fa-cart-shopping, .cart-total{
+    color: #fa2d64;
+    transition: color 0.3s;
+}
+
+.fa-cart-shopping:hover, .cart-total:hover{
+    color: black;
+}
+
+.cart-total{
+    font-weight: 600;
+}
+
+.cart-num{
+    background-color: #fa2d64;
+    transition: backgrounf-color 0.3s, color 0.3s;
+}
+
+.cart-num:hover{
+    background-color: black;
+    color: white;
+}
+
+/* MAIN */
+
+.shop-container{
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    
+}
+
+
+
+.shop-filter{
+    width: 22%;
+}
+
+.shop-products{
+    width: 75%;
+}
+
+.filter-price, .shop-products, .filter-categories{
+    background-color: white;
+}
+
+.filter-range{
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.filter-price{
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+.filter{
+    font-size: 1.4rem;
+    color: #646467;
+    margin-bottom: 1rem;
+}
+
+.filter-p1{
+    color: #fa2d64;
+    border: 1px solid #fa2d64;
+    padding: 3px 18px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.filter-p1:hover{
+    background-color: #fa2d64;
+    color: white;
+}
+
+.filter-p2 span{
+    font-weight: 600;
+    color: #646467;
+}
+
+.filter-categories{
+    padding: 2rem;
+}
+
+.filter-products{
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    color: black;
+    font-weight: 500;
+}
+
+.filter-products span{
+    color: #646467;
+}
+
+/* HOME/SHOP */
+
+.shop-products{
+    padding: 5rem;
+}
+.home-shop, .home-shop a{
+    color: #646467;
+    font-weight: normal;
+}
+
+.home-shop{
+    margin-bottom: 2rem;
+}
+
+.sort-pattern{
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+
+
+.next{
+    width: 20%;
+    justify-content: space-between;
+}
+
+.next p{
+    border: 1px solid black;
+    padding: 18px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.next p:hover{
+    background-color: black;
+    color: #fa2d64;
+}

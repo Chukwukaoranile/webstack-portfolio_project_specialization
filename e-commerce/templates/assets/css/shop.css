@@ -122,6 +122,12 @@
     padding-left: 1rem;
     color: black;
     font-weight: 500;
+    display: block;
+    transition: color 0.3s;
+}
+
+.filter-products:hover{
+    color: #fa2d64;
 }
 
 .filter-products span{

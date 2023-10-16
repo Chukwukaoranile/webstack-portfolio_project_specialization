@@ -30,7 +30,7 @@ header{
     width: 100%;
     background-position: center;
     background-size: cover;
-    height: 40rem;
+    height: 45rem;
     background-repeat: no-repeat;
 }
 
@@ -119,21 +119,23 @@ a{
 
 .hero-text-container{
     width: 40%;
-    margin: auto;
-    text-align: center;
-    margin-top: 15rem;
+    /* margin: auto; */
+    /* text-align: center; */
+    margin-top: 8rem;
+    margin-left: 10rem;
 }
 
 .hero-text-container h1{
     font-size: 5rem;
     font-weight: 400;
     color: #ffffff;
-    margin-bottom: 1.8rem;
+    margin-bottom: 4rem;
 }
 
 .hero-text-container p{
     color: #ffffff;
     line-height: 2rem;
+    margin-bottom: 2rem;
 }
 
 
@@ -168,6 +170,17 @@ a{
 .shop:hover{
     background-color: #fb4b7a;
     color: #ffffff;
+}
+
+.shop1{
+    color: white;
+    border: 1px solid white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.shop1:hover{
+    background-color: white;
+    color: #fa2d64;
 }
 
 .productCard{

@@ -12,6 +12,10 @@ body{
     display: flex;
 }
 
+.t-center{
+    text-align: center;
+}
+
 /* HEADER */
 header{
     /* padding: 25px 35px; */
@@ -131,6 +135,322 @@ a{
     color: #ffffff;
     line-height: 2rem;
 }
+
+
+/* MAIN */
+
+.main-container{
+    margin: auto;
+    width: 75%;
+    margin-top: 7rem;
+}
+
+.arrivals-shop{
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.arrivals{
+    font-weight: normal;
+    font-size: 2.5rem;
+}
+
+.shop{
+    text-decoration: none;
+    color:#fb4b7a;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 1px solid #fb4b7a;
+    padding: 1rem 2rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.shop:hover{
+    background-color: #fb4b7a;
+    color: #ffffff;
+}
+
+.productCard{
+    margin-bottom: 2rem;
+}
+
+/* .productCard{
+    background-color: #f7f7f9;
+} */
+
+.productCard-container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-img_container{
+    width: 98%;
+    /* background-color: red; */
+    height: 50vh;
+    position: relative;
+}
+
+.product-img_container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* transition: transform 0.3s; */
+}
+    /* TO MAKE THE IMAGES BIGGER ON HOVER */
+/* .product-img_container:hover img{
+    transform: scale(2);
+    cursor: pointer;
+} */
+
+.card-cart{
+    color: black;
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    background-color: #f7f7f9;
+    padding: 0.5rem;
+    border-radius: 100px;
+    display: none;
+}
+
+.product-img_container:hover .card-cart{
+    display: block;
+}
+
+.product-name, .price, .rating{
+    color: #646467;
+}
+
+.price{
+    font-weight: 600;
+}
+
+.rating{
+    letter-spacing: -0.18rem;
+}
+
+/* ABOUT HOMEPAGE */
+.about-homepage{
+    justify-content: space-between;
+    margin-top: 18rem;
+    margin-bottom: 10rem;
+    
+}
+
+.about-img{
+    width: 50%;
+}
+
+.about-writeup-container{
+    width: 40%;
+    align-items: center;
+
+}
+
+.about-homepage-div{
+   
+}
+
+.about-writeup{
+    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
+    line-height: 1.5rem;
+}
+
+/* ORGANIC CARE */
+.organic-care{
+    justify-content: space-between;
+    text-align: center;
+    border-top: 1px solid #abb8c3;
+    padding-top: 5rem;
+}
+
+.fa-hand-sparkles, .fa-leaf, .fa-hand-holding-heart{
+    color: #fb4b7a;
+    font-size: 1.5rem;
+    background-color: white;
+    padding: 20px;
+    border-radius: 100px;
+}
+
+.properties{
+    font-weight: normal;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.organic-care p{
+    line-height: 1.6rem;
+    color: #646467;
+}
+
+.background-img_2{
+    background: url("/e-commerce/templates/assets/images/pic10.jpg");
+    position: relative;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 40rem;
+    background-repeat: no-repeat;
+}
+
+/* .background-img::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+
+} */
+
+.hero_2{
+    margin-top: 6rem;
+    justify-content: center;
+    padding-top: 18%;
+    text-align: center;
+ } 
+
+ .watch-youtube{
+    color: white;
+ }
+
+ .flawless{
+    margin-bottom: 2rem;
+    font-weight: normal;
+    font-size: 3rem;
+ }
+
+.watch{
+    font-size: 0.8rem;
+    padding: 1rem 1.5rem;
+    border: 1px solid white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.watch i{
+    padding-left: 1rem;
+}
+
+.watch:hover{
+    background-color: white;
+    color: #fb4b7a;
+}
+
+.watch-div{
+    /* text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 1px solid white;
+    padding: 1rem 2rem;
+    transition: background-color 0.3s, color 0.3s;
+    width: 15rem;
+    text-align: center; */
+}
+
+
+
+.watch-div:hover a{
+    /* color: #fb4b7a; */
+}
+
+.watch-div:hover{
+    /* background-color: white;
+    color: #fb4b7a; */
+}
+
+
+.beauty-flawlwess{
+    text-align: center;
+    margin-bottom: 5rem;
+    line-height: 3rem;
+}
+
+.beauty-flawlwess p{
+    color: #646467;
+}
+
+/* REVIEW */
+.review-container{
+    margin-top: 20rem;
+}
+
+.review{
+    margin-bottom: 4rem;
+}
+
+.review-card{
+    width: 30%;
+    text-align: center;
+}
+
+.rating_pink{
+    color: #fb4b7a;
+    margin-bottom: 1rem;
+    letter-spacing: -0.12rem;
+}
+
+.rate{
+    font-size: 1.1rem;
+    line-height: 2rem;
+    font-weight: 500;
+    color: #646467;
+    margin-bottom: 1.5rem;
+}
+
+.review-img img{
+    border-radius: 100px;
+    margin-bottom: 1rem;
+}
+
+.reviewer-name{
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #646467;
+    letter-spacing: 0.1rem;
+}
+
+.review-card-container{
+    justify-content: space-between;
+}
+
+/* FOLLOW */
+.follow, .follow a{
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: black;
+    text-align: center;
+    margin-top: 9.5rem;
+    margin-bottom: 4rem;
+}
+
+.follow a{
+    text-decoration: underline;
+    text-decoration-color: black;
+    
+}
+
+/* MORE IMAGES */
+
+.more-img{
+    width: 75%;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.more-images{
+    width: 30%;
+    margin-bottom: 2rem;
+}
+
+.more-images img{
+    width: 100%;
+}
+
 
 /* FOOTER */
 

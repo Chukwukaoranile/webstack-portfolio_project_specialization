@@ -195,6 +195,86 @@ a{
   line-height: 1.5;
 }
 
+
+/* REVIEW */
+.review-container{
+  margin-top: 20rem;
+}
+
+.review{
+  margin-bottom: 4rem;
+}
+
+.review-card{
+  width: 30%;
+  text-align: center;
+}
+
+.rating_pink{
+  color: #fb4b7a;
+  margin-bottom: 1rem;
+  letter-spacing: -0.12rem;
+}
+
+.rate{
+  font-size: 1.1rem;
+  line-height: 2rem;
+  font-weight: 500;
+  color: #646467;
+  margin-bottom: 1.5rem;
+}
+
+.review-img img{
+  border-radius: 100px;
+  margin-bottom: 1rem;
+}
+
+.reviewer-name{
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #646467;
+  letter-spacing: 0.1rem;
+}
+
+.review-card-container{
+  justify-content: space-between;
+}
+
+/* FOLLOW */
+.follow, .follow a{
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: black;
+  text-align: center;
+  margin-top: 9.5rem;
+  margin-bottom: 4rem;
+}
+
+.follow a{
+  text-decoration: underline;
+  text-decoration-color: black;
+  
+}
+
+/* MORE IMAGES */
+
+.more-img{
+  width: 75%;
+  margin: auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.more-images{
+  width: 30%;
+  margin-bottom: 2rem;
+}
+
+.more-images img{
+  width: 100%;
+}
+
+
 /* FOOTER */
 
 footer{

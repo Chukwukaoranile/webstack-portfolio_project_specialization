@@ -12,6 +12,10 @@ body{
   display: flex;
 }
 
+.t-center{
+    text-align: center;
+}
+
 /* HEADER */
 /* header{
   /* padding: 25px 35px;
@@ -134,6 +138,10 @@ a{
 
 /* MAIN */
 
+.space {
+  margin-bottom: 8rem;
+}
+
 .founder-box {
   margin-top: 8rem;
 }
@@ -197,7 +205,7 @@ a{
 
 
 /* REVIEW */
-.review-container{
+/* .review-container{
   margin-top: 20rem;
 }
 
@@ -238,6 +246,38 @@ a{
 
 .review-card-container{
   justify-content: space-between;
+} */
+
+
+
+.rule hr {
+  width: 90%;  
+  background-color: #646467;
+  margin: auto;
+}
+
+.skin-type {
+  margin: 3rem;
+  margin-top: 5rem;
+}
+
+.skin-type p {
+  color:rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  margin: 1rem;
+}
+
+.skin-type .heading {
+  font-size: 22px;
+}
+
+.skin-type i {
+  color:#fa2d64;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  font-size: 28px;
+  margin-bottom: 1rem;
 }
 
 /* FOLLOW */

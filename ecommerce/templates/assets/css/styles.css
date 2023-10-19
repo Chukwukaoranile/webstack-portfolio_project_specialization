@@ -71,7 +71,7 @@ header{
     padding: 25px 35px;
 }
 
-.header-section1{
+.header-section1, .header-section4{
     width: 20%;
     padding-top: 10px;
 }
@@ -83,6 +83,13 @@ header{
     padding-top: 10px;
     position: relative;
     padding-right: 1rem;
+}
+
+.header-section4{
+    display: none;
+}
+.header-section4 i{
+    font-size: 1.5rem;
 }
 
 ul li{
@@ -119,8 +126,6 @@ a{
 
 .hero-text-container{
     width: 40%;
-    /* margin: auto; */
-    /* text-align: center; */
     margin-top: 8rem;
     margin-left: 10rem;
 }
@@ -136,6 +141,42 @@ a{
     color: #ffffff;
     line-height: 2rem;
     margin-bottom: 2rem;
+}
+
+/* NAV SIDEBAR */
+
+#nav-sidebar{
+    display: none;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+}
+
+#nav-sidebar a{
+    color: black;
+    line-height: 5rem;
+    padding-left: 1rem;
+    
+}
+
+#nav-sidebar ul li{
+    border-top: 1px solid #abb8c3;
+    width: 100%;
+}
+
+#nav-sidebar ul{
+    flex-direction: column;
+}
+
+#nav-x{
+    justify-content: right;
+    font-size: 1.5rem;
+}
+.cont{
+    border-bottom: 1px solid #abb8c3;
 }
 
 /* CART SIDEBAR */
@@ -608,4 +649,14 @@ footer{
     border-top: 1px solid #abb8c3;
     padding: 2rem;
     font-size: 0.9rem;
+}
+
+@media screen and (max-width: 1280px) {
+    .header-section1{
+        display: none;
+    }
+
+    .header-section4{
+        display: block;
+    }
 }

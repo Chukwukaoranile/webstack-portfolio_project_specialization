@@ -1,0 +1,136 @@
+.cartCard-container{
+    margin: auto;
+    width: 75%;
+    background-color: white;
+    padding: 5rem;
+}
+
+.product-headings{
+    background-color: #f8f8ff;
+    border-bottom: 1px solid #abb8c3;
+}
+
+.product-quantity{
+    border-bottom: 1px solid #abb8c3;
+}
+
+.headings{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    color: #646467;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+.headings li{
+    width: 20%;
+    
+}
+
+.quantityPrice{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-weight: normal;
+}
+
+.coupon{
+    border: 1px dotted #646467;
+    
+}
+
+.applyCoupon{
+    border: 1px solid #fb4b7a;
+    padding: 0.5rem 2rem;
+    transition: background-color 03s;
+}
+
+.applyCoupon a{
+    color: #fb4b7a;
+    /* padding: 1rem 2rem; */
+    transition: color 03s;
+}
+
+.applyCoupon:hover{
+    background-color: #fb4b7a;
+}
+
+.applyCoupon a:hover{
+    color: white;
+}
+
+.update{
+    color: #fb4b7a;
+    border: 1px solid #fb4b7a;
+}
+
+.couponUpdate{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.borda{
+    border: 1px solid #abb8c3;
+}
+
+.cart-tot{
+    background-color: #f8f8ff;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    border-bottom: 1px solid #abb8c3;
+}
+
+.checkout-card{
+    border: 1px solid #abb8c3;
+    width: 40%;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.cart-tot{
+    color: black;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 600;
+}
+
+.subtot{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+    padding-left: 2rem;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.checkout{
+    border: 1px solid #fb4b7a;
+    text-align: center;
+    padding: 1.5rem;
+    margin: auto;
+    transition: background-color 0.3s;
+}
+
+.checkout:hover{
+    background-color: #fb4b7a;
+}
+
+.checkout a{
+    color: #fb4b7a;
+    text-align: center;
+    padding: 3rem;
+    transition: color 0.3s;
+}
+
+.checkout a:hover{
+    color: white;
+}
+
+.hrpad{
+    margin-bottom: 1rem;
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skin cleanser store</title>
+    <title>Flawless-Skin cleanser store</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -18,6 +18,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script src="https://kit.fontawesome.com/f117ac489a.js" crossorigin="anonymous"></script>
+    <link
+      rel="shortcut icon"
+      href="/ecommerce/templates/assets/images/cropped-favicon-192x192.jpg"
+      type="image/x-icon"
+    />
     
 </head>
 <body>
@@ -59,7 +64,7 @@
                         <section>
                             <a href="/ecommerce/templates/login.html"><i class="fa-solid fa-user"></i></a>
                         </section>
-                        <section>
+                        <section class="cartTotal">
                             <span>$0.00</span>
                         </section>
                         <section >
@@ -115,7 +120,7 @@
                 <section class="productCard-container d-flex">
                     <section class="productCard">
                         <div>
-                            <a href="" class="anchor-card">
+                            <a href="/ecommerce/templates/product.html" class="anchor-card">
                                 <div class="product-img_container">
                                     <img src="assets/images/pic3.jpg" alt="">
                                     <a href=""><i class="fa-solid fa-cart-shopping card-cart"></i></a>
@@ -293,6 +298,31 @@
                             <a href="" class="anchor-card">
                                 <div class="product-img_container">
                                     <img src="assets/images/pic8.jpg" alt="">
+                                    <a href=""><i class="fa-solid fa-cart-shopping card-cart"></i></a>
+                                </div>
+                                
+                            </a>
+
+                            <div>
+                                <p class="product-name">Cleanser</p>
+                                <p class="product-type">Hybrid Cleansing Balm</p>
+                                <div class="rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p class="price">$32.90</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="productCard">
+                        <div>
+                            <a href="" class="anchor-card">
+                                <div class="product-img_container">
+                                    <img src="assets/images/pic14.jpg" alt="">
                                     <a href=""><i class="fa-solid fa-cart-shopping card-cart"></i></a>
                                 </div>
                                 
@@ -442,19 +472,19 @@
                 <section class="d-flex organic-care">
 
                     
-                    <section>
+                    <section class="organic1">
                         <i class="fa-solid fa-hand-sparkles"></i>
                         <h3 class="properties">All Skin Types</h3>
                         <p>Morbi nullam odio lectus vitae lorem in non</p>
                         <p>tortor aliquet eget faucibus dui dolor.</p>
                     </section>
-                    <section>
+                    <section class="organic1">
                         <i class="fa-solid fa-leaf"></i>
                         <h3 class="properties">Pure Organic</h3>
                         <p>Morbi nullam odio lectus vitae lorem in non</p>
                         <p>tortor aliquet eget faucibus dui dolor.</p>
                     </section>
-                    <section>
+                    <section class="organic1">
                         <i class="fa-solid fa-hand-holding-heart"></i>
                         <h3 class="properties">Natural Care</h3>
                         <p>Morbi nullam odio lectus vitae lorem in non</p>
@@ -469,7 +499,7 @@
                 <div class="d-flex hero_2">
                     <div class="watch-youtube">
                         <h2 class="flawless">Flawless Skincare Regimen</h2>
-                        <a href="" class="watch">WATCH THE VIDEOS <i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.youtube.com/shorts/FzOeMCHrM-o" class="watch">WATCH THE VIDEOS <i class="fa-brands fa-youtube"></i></a>
                     </div>
                 </div>
             </section>
@@ -582,6 +612,7 @@
                     </section>
                 </section>
 
+                <!-- REVIEWS -->
                 <section class="review-container">
                     <h2 class="arrivals t-center review">What Our Customers Say</h2>
 
@@ -681,7 +712,7 @@
         <footer>
             <section class="footer-container d-flex">
                 <div class="footer-services d-flex">
-                    <section class="d-flex">
+                    <section class="d-flex footer-serviceContainer">
                         <div class="icon-container d-flex">
                             <span class="material-symbols-outlined">
                                 local_shipping
@@ -694,7 +725,7 @@
                         </div>
                     </section>
     
-                    <section class="d-flex">
+                    <section class="d-flex footer-serviceContainer">
                         <div class="icon-container d-flex">
                             <span class="material-symbols-outlined">
                                 credit_card
@@ -707,7 +738,7 @@
                         </div>
                     </section>
     
-                    <section class="d-flex">
+                    <section class="d-flex footer-serviceContainer">
                         <div class="icon-container d-flex">
                             <span class="material-symbols-outlined">
                                 airport_shuttle
@@ -720,7 +751,7 @@
                         </div>
                     </section>
     
-                    <section class="d-flex">
+                    <section class="d-flex footer-serviceContainer">
                         <div class="icon-container d-flex">
                             <span class="material-symbols-outlined">
                                 help

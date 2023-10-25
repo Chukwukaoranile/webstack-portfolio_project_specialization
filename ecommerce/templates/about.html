@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Skin cleanser store</title>
-    <link rel="stylesheet" href="{{ url_for('templates', filename='assets/css/about.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/about.css') }}" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
@@ -50,7 +50,7 @@
     ></script>
     <link
       rel="shortcut icon"
-      href="/ecommerce/templates/assets/images/cropped-favicon-192x192.jpg"
+      href="{{ url_for('static', filename='/images/cropped-favicon-192x192.jpg') }}"
       type="image/x-icon"
     />
   </head>
@@ -71,7 +71,7 @@
             <section class="business-title header-section2">
               <img
                 class="business-title-img"
-                src="assets/images/site-logo.svg"
+		src="{{ url_for('static', filename='images/site-logo.svg') }}"
                 alt=""
               />
             </section>
@@ -110,7 +110,7 @@
             <section class="founder-box d-flex">
               <div class="founder-image">
                 <img
-			src="{{ url_for('templates', filename='assets/images/about-founder-img-bg.jpg') }}
+			src="{{ url_for('static', filename='images/about-founder-img-bg.jpg') }}"
                   alt="Founder's Image"
                   srcset=""
                 />
@@ -206,7 +206,7 @@
                   </p>
                 </div>
                 <div class="review-img">
-                  <img src="assets/images/review-1.jpg" alt="" />
+			<img src="{{ url_for('static', filename='images/review-1.jpg') }}" alt="" />
                 </div>
                 <p class="reviewer-name">JENNIFER LEWIS</p>
               </section>
@@ -226,7 +226,7 @@
                   </p>
                 </div>
                 <div class="review-img">
-                  <img src="assets/images/review-2.jpg" alt="" />
+			<img src="{{ url_for('static', filename='/images/review-2.jpg') }}" alt="" />
                 </div>
                 <p class="reviewer-name">ALICIA HEART</p>
               </section>
@@ -246,7 +246,7 @@
                   </p>
                 </div>
                 <div class="review-img">
-                  <img src="assets/images/review-3.jpg" alt="" />
+			<img src="{{ url_for('static', filename='/images/review-3.jpg') }}" alt="" />
                 </div>
                 <p class="reviewer-name">JUAN CARLOS</p>
               </section>
@@ -257,32 +257,32 @@
             <section class="more-img d-flex">
               <section class="more-images">
                 <a href="">
-                  <img src="assets/images/more-img-1.jpg" alt="" />
+			<img src="{{ url_for('static', filename='images/more-img-1.jpg') }}" alt="" />
                 </a>
               </section>
               <section class="more-images">
                 <a href="">
-                  <img src="assets/images/more-img-2.jpg" alt="" />
+			<img src="{{ url_for('static', filename='/images/more-img-2.jpg') }}" alt="" />
                 </a>
               </section>
               <section class="more-images">
                 <a href="">
-                  <img src="assets/images/more-img-3.jpg" alt="" />
+			<img src="{{ url_for('static', filename='/images/more-img-3.jpg') }}" alt="" />
                 </a>
               </section>
               <section class="more-images">
                 <a href="">
-                  <img src="assets/images/more-img-4.jpg" alt="" />
+			<img src="{{ url_for('static', filename='/images/more-img-4.jpg') }}" alt="" />
                 </a>
               </section>
               <section class="more-images">
                 <a href="">
-                  <img src="assets/images/more-img-5.jpg" alt="" />
+			<img src="{{ url_for('static', filename='images/more-img-5.jpg') }}" alt="" />
                 </a>
               </section>
               <section class="more-images">
                 <a href="">
-                  <img src="assets/images/more-img-6.jpg" alt="" />
+			<img src="{{ url_for('static', filename='images/more-img-6.jpg') }}" alt="" />
                 </a>
               </section>
             </section>
@@ -341,7 +341,7 @@
 
         <section class="footer-icons">
           <section>
-            <img src="assets/images/site-logo-dark.svg" alt="" />
+		  <img src="{{ url_for('static', filename='/images/site-logo-dark.svg') }}" alt="" />
           </section>
 
           <section>

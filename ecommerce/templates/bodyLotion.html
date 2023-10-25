@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skin cleanser store</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/styles.css') }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -18,8 +18,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script src="https://kit.fontawesome.com/f117ac489a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/shop.css">
-    <link rel="stylesheet" href="assets/css/moisturiser.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/shop.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/moisturiser.css') }}">
     
 </head>
 <body>
@@ -37,7 +37,7 @@
                     </section>
     
                     <section class="business-title header-section2">
-                        <img class="business-title-img" src="assets/images/site-logo-dark.svg" alt="" >
+			    <img class="business-title-img" src="{{ url_for('static', filename='/images/site-logo-dark.svg') }}" alt="" >
                     </section>
     
                     <section class="profile_cart d-flex header-section3">

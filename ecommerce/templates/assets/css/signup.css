@@ -67,15 +67,18 @@ button {
   border: none;
   padding: 0.5rem;
   font-size: 16px;
-  margin-left: 3rem;
+  margin-left: 2rem;
   border-radius: 2px;
   color: #ffffff;
   cursor: pointer;
+  /* margin-top: 2rem;
+  margin-bottom: 3rem; */
 }
 
 .links {
   margin-left: -5rem;
   text-align: justify;
+  /* margin-top: 3rem; */
 }
 
 .links p {

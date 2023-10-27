@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skin cleanser store</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/styles.css') }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -18,9 +18,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script src="https://kit.fontawesome.com/f117ac489a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/shop.css">
-    <link rel="stylesheet" href="assets/css/moisturiser.css">
-    
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/shop.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/shop.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/moisturiser.css') }}">
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='/images/cropped-favicon-192x192.jpg') }}"
+      type="image/x-icon"
+    />
 </head>
 <body>
     <div>
@@ -37,7 +42,7 @@
                     </section>
     
                     <section class="business-title header-section2">
-                        <img class="business-title-img" src="assets/images/site-logo-dark.svg" alt="" >
+                        <img class="business-title-img" src="{{ url_for('static', filename='/images/site-logo-dark.svg') }}" alt="" >
                     </section>
     
                     <section class="profile_cart d-flex header-section3">
@@ -118,7 +123,7 @@
                                 <div>
                                     <a href="" class="anchor-card">
                                         <div class="product-img_container">
-                                            <img src="assets/images/pic1.jpg" alt="">
+                                            <img src="{{ url_for('static', filename='/images/pic1.jpg') }}" alt="">
                                             <a href=""><i class="fa-solid fa-cart-shopping card-cart"></i></a>
                                         </div>
                                         
@@ -142,7 +147,7 @@
                                 <div>
                                     <a href="" class="anchor-card">
                                         <div class="product-img_container">
-                                            <img src="assets/images/pic3.jpg" alt="">
+                                            <img src="{{ url_for('static', filename='/images/pic3.jpg') }}" alt="">
                                             <a href=""><i class="fa-solid fa-cart-shopping card-cart"></i></a>
                                         </div>
                                         
@@ -168,7 +173,7 @@
                                 <div>
                                     <a href="" class="anchor-card">
                                         <div class="product-img_container">
-                                            <img src="assets/images/pic11.jpg" alt="">
+                                            <img src="{{ url_for('static', filename='/images/pic11.jpg') }}" alt="">
                                             <a href=""><i class="fa-solid fa-cart-shopping card-cart"></i></a>
                                         </div>
                                         
@@ -255,15 +260,15 @@
 
             <section class="footer-icons">
                 <section>
-                    <img src="assets/images/site-logo-dark.svg" alt="">
+                    <img src="{{ url_for('static', filename='/images/site-logo-dark.svg') }}" alt="">
                 </section>
 
                 <section>
                     <ul class="d-flex footer-options">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Shop</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="/ecommerce/templates/index.html">Home</a></li>
+                        <li><a href="/ecommerce/templates/shop.html">Shop</a></li>
+                        <li><a href="/ecommerce/templates/about.html">About</a></li>
+                        <li><a href="/ecommerce/templates/contact.html">Contact</a></li>
                     </ul>
                 </section>
 

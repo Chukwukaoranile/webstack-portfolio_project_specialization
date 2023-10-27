@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact - Skin cleanser store</title>
-    <link rel="stylesheet" href="assets/css/contact.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/contact.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/flashmessage.css') }}" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
@@ -50,11 +51,12 @@
     ></script>
     <link
       rel="shortcut icon"
-      href="/ecommerce/templates/assets/images/cropped-favicon-192x192.jpg"
+      href="{{ url_for('static', filename='/images/cropped-favicon-192x192.jpg') }}"
       type="image/x-icon"
     />
   </head>
   <body>
+  
     <div>
       <section class="background-img">
         <header>
@@ -71,7 +73,7 @@
             <section class="business-title header-section2">
               <img
                 class="business-title-img"
-                src="assets/images/site-logo.svg"
+                src="{{ url_for('static', filename='assets/images/site-logo.svg') }}"
                 alt=""
               />
             </section>
@@ -235,8 +237,20 @@
             </div>
           </div>
           <div class="form-box">
-            <form action="https://httpbin.org/get" method="get">
+            <form  method="get">
               <div>
+                {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        <div class="flash-messages">
+            {% for category, message in messages %}
+                <div class="flash-message {% if category == 'error' %}error{% else %}success{% endif %}">
+                    {{ message }}
+                    <span class="close-button" onclick="this.parentElement.style.display='none';">&times;</span>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endwith %}
                 <p>
                   <label for="name">Name <span>*</span></label>
                 </p>
@@ -260,7 +274,7 @@
               </div>
               <button
                 type="submit"
-                formaction="https://httpbin.org/post"
+                formaction="/ecommerce/templates/contact.html"
                 formmethod="post"
               >
                 SUBMIT
@@ -320,15 +334,15 @@
 
         <section class="footer-icons">
           <section>
-            <img src="assets/images/site-logo-dark.svg" alt="" />
+            <img src="{{ url_for('static', filename='/images/site-logo-dark.svg') }}" alt="" />
           </section>
 
           <section>
             <ul class="d-flex footer-options">
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="">SHOP</a></li>
-              <li><a href="about.html">ABOUT</a></li>
-              <li><a href="contact.html">CONTACT</a></li>
+              <li><a href="/ecommerce/templates/index.html">Home</a></li>
+              <li><a href="/ecommerce/templates/shop.html">Shop</a></li>
+              <li><a href="/ecommerce/templates/about.html">About</a></li>
+              <li><a href="/ecommerce/templates/contact.html">Contact</a></li>>
             </ul>
           </section>
 

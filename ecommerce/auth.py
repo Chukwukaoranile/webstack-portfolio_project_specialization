@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template, request, flash, redirect, url_for, session, Flask
-from .models import User
+from .models import User, Contact
 from werkzeug.security import generate_password_hash, check_password_hash
 from . import db   ##means from __init__.py import db
 from flask_login import login_user, login_required, logout_user, current_user
@@ -54,7 +54,8 @@ def signup():
             db.session.add(new_user)
             db.session.commit()
             login_user(new_user, remember=True)
-            flash('Account created!', category='success')
+            flash('Congratulations!, Account created', category='success')
+
             return redirect(url_for('auth.login'))
 
     return render_template("signup.html", user=current_user)
@@ -69,8 +70,25 @@ def index():
     return render_template('index.html')
 
 
-@auth.route('/ecommerce/templates/contact.html')
+
+@auth.route('/ecommerce/templates/contact.html', methods=['GET', 'POST'])
 def contact():
+    if request.method == 'POST':
+        name = request.form.get('name')
+        email = request.form.get('email')
+        message = request.form.get('message')
+
+        if not name or not email or not message:
+            flash('Please fill in all fields.', category='error')
+        elif len(message) < 4:
+            flash('Message must be greater than 3 characters.', category='error')
+        else:
+            new_message = Contact(name=name, email=email, message=message)
+            db.session.add(new_message)
+            db.session.commit()
+            flash('Thank you for contacting us. We will respond as soon as possible!', category='success')
+            return redirect(url_for('auth.contact'))  
+
     return render_template('contact.html')
 
 

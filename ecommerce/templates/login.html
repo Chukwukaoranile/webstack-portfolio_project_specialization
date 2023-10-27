@@ -4,24 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Log In Skin cleanser store</title>
-    <link rel="stylesheet" href="assets/css/login.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/login.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/flashmessage.css') }}" />
     <link
       rel="shortcut icon"
-      href="/e-commerce/templates/assets/images/cropped-favicon-192x192.jpg"
+      href="{{ url_for('static', filename='/images/cropped-favicon-192x192.jpg') }}"
       type="image/x-icon"
     />
   </head>
   <body>
+    
     <section class="business-title header-section2">
       <img
         class="business-title-img"
-        src="/e-commerce/templates/assets/images/site-logo-dark.svg"
+        src="{{ url_for('static', filename='/images/site-logo-dark.svg') }}"
         alt=""
       />
     </section>
 
     <section class="card-box">
-      <form action="https://httpbin.org/get" method="post">
+      
+      <form method="POST">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        <div class="flash-messages">
+            {% for category, message in messages %}
+                <div class="flash-message {% if category == 'error' %}error{% else %}success{% endif %}">
+                    {{ message }}
+                    <span class="close-button" onclick="this.parentElement.style.display='none';">&times;</span>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endwith %}
+
         <p>
           <label for="email">Username or Email Address</label>
           <input
@@ -47,7 +63,8 @@
     <section class="links">
       <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
       <p><a href="">Lost your password?</a></p>
-      <p><a href="">← Go to Skin Cleanser Store</a></p>
+      
+      <p><a href="/ecommerce/templates/cleanser.html">← Go to Skin Cleanser Store</a></p>
     </section>
   </body>
 </html>

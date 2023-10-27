@@ -1,0 +1,35 @@
+/* Style for the flash messages container */
+.flash-messages {
+    margin: 10px;
+}
+
+/* Style for the flash message box */
+.flash-message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Style for error messages */
+.error {
+    background-color: #ffaaaa;
+}
+
+/* Style for success messages */
+.success {
+    background-color: #aaffaa;
+}
+
+/* Style for the close button */
+.close-button {
+    float: right;
+    cursor: pointer;
+}
+
+/* style logout
+button {
+    background-color: 
+    color: #ffffff;
+    padding: 10px 20px; 
+}
+

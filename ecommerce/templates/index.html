@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flawless-Skin cleanser store</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/styles.css') }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -20,7 +20,7 @@
     <script src="https://kit.fontawesome.com/f117ac489a.js" crossorigin="anonymous"></script>
     <link
       rel="shortcut icon"
-      href="/ecommerce/templates/assets/images/cropped-favicon-192x192.jpg"
+      href="{{ url_for('static', filename='/images/cropped-favicon-192x192.jpg') }}"
       type="image/x-icon"
     />
     
@@ -57,7 +57,7 @@
                     <!-- NAV SIDEBAR ENDS -->
     
                     <section class="business-title header-section2">
-                        <img class="business-title-img" src="assets/images/site-logo.svg" alt="" >
+                        <img class="business-title-img" src="{{ url_for('static', filename='/images/site-logo.svg') }}" alt="" >
                     </section>
     
                     <section class="profile_cart d-flex header-section3">
@@ -122,7 +122,7 @@
                         <div>
                             <a href="/ecommerce/templates/product.html" class="anchor-card">
                                 <div class="product-img_container">
-                                    <img src="assets/images/pic3.jpg" alt="">
+                                    <img src="{{ url_for('static', filename='/images/pic3.jpg') }}" alt="">
                                     <a href=""><i class="fa-solid fa-cart-shopping card-cart"></i></a>
                                 </div>
                                 
@@ -147,7 +147,7 @@
                         <div>
                             <a href="" class="anchor-card">
                                 <div class="product-img_container">
-                                    <img src="assets/images/pic2.jpg" alt="">
+                                    <img src="{{ url_for('static', filename='/images/pic2.jpg') }}" alt="">
                                     <a href=""><i class="fa-solid fa-cart-shopping card-cart"></i></a>
                                 </div>
                                 
@@ -172,7 +172,7 @@
                         <div>
                             <a href="" class="anchor-card">
                                 <div class="product-img_container">
-                                    <img src="assets/images/pic1.jpg" alt="">
+                                    <img src="{{ url_for('static', filename='/images/pic1.jpg') }}" alt="">
                                     <a href=""><i class="fa-solid fa-cart-shopping card-cart"></i></a>
                                 </div>
                                 
@@ -197,7 +197,7 @@
                         <div>
                             <a href="" class="anchor-card">
                                 <div class="product-img_container">
-                                    <img src="assets/images/pic4.jpg" alt="">
+                                    <img src="{{ url_for('static', filename='/images/pic4.jpg') }}" alt="">
                                     <a href=""><i class="fa-solid fa-cart-shopping card-cart"></i></a>
                                 </div>
                                 
@@ -222,7 +222,7 @@
                         <div>
                             <a href="" class="anchor-card">
                                 <div class="product-img_container">
-                                    <img src="assets/images/pic5.jpg" alt="">
+                                    <img src="{{ url_for('static', filename='/images/pic5.jpg') }}" alt="">
                                     <a href=""><i class="fa-solid fa-cart-shopping card-cart"></i></a>
                                 </div>
                                 
@@ -247,7 +247,7 @@
                         <div>
                             <a href="" class="anchor-card">
                                 <div class="product-img_container">
-                                    <img src="assets/images/pic6.jpg" alt="">
+                                    <img src="{{ url_for('static', filename='/images/pic6.jpg') }}" alt="">
                                     <a href=""><i class="fa-solid fa-cart-shopping card-cart"></i></a>
                                 </div>
                                 
@@ -272,7 +272,7 @@
                         <div>
                             <a href="" class="anchor-card">
                                 <div class="product-img_container">
-                                    <img src="assets/images/pic7.jpg" alt="">
+                                    <img src="{{ url_for('static', filename='/images/pic7.jpg') }}" alt="">
                                     <a href=""><i class="fa-solid fa-cart-shopping card-cart"></i></a>
                                 </div>
                                 
@@ -297,7 +297,7 @@
                         <div>
                             <a href="" class="anchor-card">
                                 <div class="product-img_container">
-                                    <img src="assets/images/pic8.jpg" alt="">
+                                    <img src="{{ url_for('static', filename='/images/pic8.jpg') }}" alt="">
                                     <a href=""><i class="fa-solid fa-cart-shopping card-cart"></i></a>
                                 </div>
                                 
@@ -322,7 +322,7 @@
                         <div>
                             <a href="" class="anchor-card">
                                 <div class="product-img_container">
-                                    <img src="assets/images/pic14.jpg" alt="">
+                                    <img src="{{ url_for('static', filename='/images/pic14.jpg') }}" alt="">
                                     <a href=""><i class="fa-solid fa-cart-shopping card-cart"></i></a>
                                 </div>
                                 
@@ -450,7 +450,7 @@
 
                 <section class="d-flex about-homepage">
                     <section class="about-img">
-                        <img src="assets/images/skin-cleanser-template-face-lotion-img.jpg" alt="">
+                        <img src="{{ url_for('static', filename='images/skin-cleanser-template-face-lotion-img.jpg') }}" alt="">
                     </section>
                     <section class="about-writeup-container d-flex">
                         <div class= "about-homepage-div">
@@ -515,7 +515,7 @@
                         <div>
                             <a href="" class="anchor-card">
                                 <div class="product-img_container">
-                                    <img src="assets/images/pic3.jpg" alt="">
+                                    <img src="{{ url_for('static', filename='/images/pic3.jpg') }}" alt="">
                                     <a href=""><i class="fa-solid fa-cart-shopping card-cart"></i></a>
                                 </div>
                                 
@@ -540,7 +540,7 @@
                         <div>
                             <a href="" class="anchor-card">
                                 <div class="product-img_container">
-                                    <img src="assets/images/pic2.jpg" alt="">
+                                    <img src="{{ url_for('static', filename='/images/pic2.jpg') }}" alt="">
                                     <a href=""><i class="fa-solid fa-cart-shopping card-cart"></i></a>
                                 </div>
                                 
@@ -565,7 +565,7 @@
                         <div>
                             <a href="" class="anchor-card">
                                 <div class="product-img_container">
-                                    <img src="assets/images/pic1.jpg" alt="">
+                                    <img src="{{ url_for('static', filename='/images/pic1.jpg') }}" alt="">
                                     <a href=""><i class="fa-solid fa-cart-shopping card-cart"></i></a>
                                 </div>
                                 
@@ -590,7 +590,7 @@
                         <div>
                             <a href="" class="anchor-card">
                                 <div class="product-img_container">
-                                    <img src="assets/images/pic4.jpg" alt="">
+                                    <img src="{{ url_for('static', filename='/images/pic4.jpg') }}" alt="">
                                     <a href=""><i class="fa-solid fa-cart-shopping card-cart"></i></a>
                                 </div>
                                 
@@ -629,7 +629,7 @@
                                 <p class="rate">Sed odio donec curabitur auctor amet tincidunt non odio enim felis tincidunt amet morbi egestas hendrerit.</p>
                             </div>
                             <div class="review-img">
-                                <img src="assets/images/review-1.jpg" alt="">
+                                <img src="{{ url_for('static', filename='/images/review-1.jpg') }}" alt="">
                             </div>
                             <p class="reviewer-name">JENNIFER LEWIS</p>
                         </section>
@@ -646,7 +646,7 @@
                                 <p class="rate">Sed odio donec curabitur auctor amet tincidunt non odio enim felis tincidunt amet morbi egestas hendrerit.</p>
                             </div>
                             <div class="review-img">
-                                <img src="assets/images/review-2.jpg" alt="">
+                                <img src="{{ url_for('static', filename='/images/review-2.jpg') }}" alt="">
                             </div>
                             <p class="reviewer-name">ALICIA HEART</p>
                         </section>
@@ -663,7 +663,7 @@
                                 <p class="rate">Sed odio donec curabitur auctor amet tincidunt non odio enim felis tincidunt amet morbi egestas hendrerit.</p>
                             </div>
                             <div class="review-img">
-                                <img src="assets/images/review-3.jpg" alt="">
+                                <img src="{{ url_for('static', filename='/images/review-3.jpg') }}" alt="">
                             </div>
                             <p class="reviewer-name">JUAN CARLOS</p>
                         </section>
@@ -674,32 +674,32 @@
                     <section class="more-img d-flex">
                         <section class="more-images">
                             <a href="" >
-                                <img src="assets/images/more-img-1.jpg" alt="">
+                                <img src="{{ url_for('static', filename='/images/more-img-1.jpg') }}" alt="">
                             </a>
                         </section>
                         <section class="more-images">
                             <a href="">
-                                <img src="assets/images/more-img-2.jpg" alt="">
+                                <img src="{{ url_for('static', filename='/images/more-img-2.jpg') }}" alt="">
                             </a>
                         </section>
                         <section class="more-images">
                             <a href="">
-                                <img src="assets/images/more-img-3.jpg" alt="">
+                                <img src="{{ url_for('static', filename='/images/more-img-3.jpg') }}" alt="">
                             </a>
                         </section>
                         <section class="more-images">
                             <a href="">
-                                <img src="assets/images/more-img-4.jpg" alt="">
+                                <img src="{{ url_for('static', filename='/images/more-img-4.jpg') }}" alt="">
                             </a>
                         </section>
                         <section class="more-images">
                             <a href="">
-                                <img src="assets/images/more-img-5.jpg" alt="">
+                                <img src="{{ url_for('static', filename='/images/more-img-5.jpg') }}" alt="">
                             </a>
                         </section>
                         <section class="more-images">
                             <a href="">
-                                <img src="assets/images/more-img-6.jpg" alt="">
+                                <img src="{{ url_for('static', filename='/images/more-img-6.jpg') }}" alt="">
                             </a>
                         </section>
                     </section>
@@ -769,15 +769,15 @@
 
             <section class="footer-icons">
                 <section>
-                    <img src="assets/images/site-logo-dark.svg" alt="">
+                    <img src="{{ url_for('static', filename='/images/site-logo-dark.svg') }}" alt="">
                 </section>
 
                 <section>
                     <ul class="d-flex footer-options">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Shop</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="/ecommerce/templates/index.html">Home</a></li>
+                        <li><a href="/ecommerce/templates/shop.html">Shop</a></li>
+                        <li><a href="/ecommerce/templates/about.html">About</a></li>
+                        <li><a href="/ecommerce/templates/contact.html">Contact</a></li>
                     </ul>
                 </section>
 
@@ -794,6 +794,6 @@
 
         </footer>
     </div>
-    <script src="/ecommerce/templates/assets/js/side-cart.js"></script>
+    <script src="{{ url_for('static', filename='/side-cart.js') }}"></script>
 </body>
 </html>

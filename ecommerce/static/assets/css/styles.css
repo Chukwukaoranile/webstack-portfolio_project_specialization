@@ -25,7 +25,7 @@ header{
 }
 
 .background-img{
-    background: url("/ecommerce/templates/assets/images/hero_img.jpg");
+    background: url("/ecommerce/static/images/hero_img.jpg");
     position: relative;
     width: 100%;
     background-position: center;
@@ -298,7 +298,7 @@ a{
 }
 
 .background-img_2{
-    background: url("/ecommerce/templates/assets/images/pic10.jpg");
+    background: url("/ecommerce/static/images/pic10.jpg");
     position: relative;
     width: 100%;
     background-position: center;

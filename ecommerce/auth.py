@@ -55,6 +55,7 @@ def signup():
             db.session.commit()
             login_user(new_user, remember=True)
             flash('Congratulations!, Account created', category='success')
+
             return redirect(url_for('auth.login'))
 
     return render_template("signup.html", user=current_user)
@@ -67,6 +68,7 @@ def about():
 @auth.route('/ecommerce/templates/index.html')
 def index():
     return render_template('index.html')
+
 
 
 @auth.route('/ecommerce/templates/contact.html', methods=['GET', 'POST'])

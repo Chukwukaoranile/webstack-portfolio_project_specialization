@@ -24,8 +24,8 @@ header{
     
 }
 
-.background-img{
-    "background: url("/static/images/hero_img.jpg");
+.background-img {
+    background: url('/static/images/hero_img.jpg');
     position: relative;
     width: 100%;
     background-position: center;
@@ -33,6 +33,7 @@ header{
     height: 45rem;
     background-repeat: no-repeat;
 }
+
 
 .background-img::before{
     content: '';

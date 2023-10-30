@@ -119,6 +119,10 @@ def sunscreen():
 def shop():
     return render_template('shop.html')
 
+@auth.route('/ecommerce/templates/product.html')
+def product():
+    return render_template('product.html')
+
 
 @auth.route('/ecommerce/templates/cart.html')
 @login_required

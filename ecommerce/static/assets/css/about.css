@@ -25,7 +25,7 @@ body{
 } */
 
 .background-img{
-  background: url("/ecommerce/templates/assets/images/about-img.jpg");
+  background: url("/static/images/about-img.jpg");
   position: relative;
   width: 100%;
   background-position: center;

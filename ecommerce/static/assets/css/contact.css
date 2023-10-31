@@ -18,7 +18,7 @@ body{
 }*/
 
 .background-img{
-  background: url("/ecommerce/templates/assets/images/contact-img.jpg");
+  background: url("/static/images/contact-img.jpg");
   position: relative;
   width: 100%;
   background-position: center;

@@ -50,7 +50,7 @@
     ></script>
     <link
       rel="shortcut icon"
-      href="{{ url_for('static', filename='/images/cropped-favicon-192x192.jpg') }}"
+      href="{{ url_for('static', filename='images/cropped-favicon-192x192.jpg') }}"
       type="image/x-icon"
     />
   </head>
@@ -71,14 +71,14 @@
             <section class="business-title header-section2">
               <img
                 class="business-title-img"
-                src="{{ url_for('static', filename='/images/site-logo.svg') }}"
+                src="{{ url_for('static', filename='images/site-logo.svg') }}"
                 alt=""
               />
             </section>
 
             <section class="profile_cart d-flex header-section3">
               <section>
-                <a href="/ecommerce/templates/login.html"><i class="fa-solid fa-user"></i></a>
+                <a href=""><i class="fa-solid fa-user"></i></a>
               </section>
               <section>
                 <span>$0.00</span>
@@ -110,7 +110,7 @@
             <section class="founder-box d-flex">
               <div class="founder-image">
                 <img
-                  src="{{ url_for('static', filename='/images/about-founder-img-bg.jpg') }}"
+                  src="{{ url_for('static', filename='images/about-founder-img-bg.jpg') }}"
                   alt="Founder's Image"
                   srcset=""
                 />
@@ -286,12 +286,12 @@
           <section class="more-img d-flex">
             <section class="more-images">
               <a href="">
-                <img src="{{ url_for('static', filename='/images/more-img-1.jpg') }}" alt="" />
+                <img src="{{ url_for('static', filename='images/more-img-1.jpg') }}" alt="" />
               </a>
             </section>
             <section class="more-images">
               <a href="">
-                <img src="{{ url_for('static', filename='/images/more-img-2.jpg') }}" alt="" />
+                <img src="{{ url_for('static', filename='images/more-img-2.jpg') }}" alt="" />
               </a>
             </section>
             <section class="more-images">
@@ -374,10 +374,10 @@
 
           <section>
             <ul class="d-flex footer-options">
-              <li><a href="/ecommerce/templates/index.html">Home</a></li>
-                        <li><a href="/ecommerce/templates/shop.html">Shop</a></li>
-                        <li><a href="/ecommerce/templates/about.html">About</a></li>
-                        <li><a href="/ecommerce/templates/contact.html">Contact</a></li>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="">SHOP</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
             </ul>
           </section>
 
@@ -393,5 +393,6 @@
         </section>
       </footer>
     </div>
+    <script src="{{ url_for('static', filename='/side-cart.js') }}"></script>
   </body>
 </html>

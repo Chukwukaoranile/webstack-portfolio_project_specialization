@@ -64,9 +64,9 @@ def about():
     return render_template('about.html')
 
 
-@auth.route('/ecommerce/templates/index.html')
-def index():
-    return render_template('index.html')
+@auth.route('/')
+def home():
+    return render_template('home.html')
 
 
 @auth.route('/ecommerce/templates/contact.html', methods=['GET', 'POST'])

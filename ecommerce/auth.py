@@ -125,6 +125,5 @@ def product():
 
 
 @auth.route('/ecommerce/templates/cart.html')
-@login_required
 def cart():
-    return render_template('cart.html', user=current_user)
+    return render_template('cart.html')
